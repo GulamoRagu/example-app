@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProdutoController;
-
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\CarroController;
 
 
-Route::resource('produtos', ProdutoController::class);
+
+Route::get('/', [CarroController::class, 'index']);
+Route::resource('carros', CarroController::class);
+
+Route::resource('carros', CarroController::class);
