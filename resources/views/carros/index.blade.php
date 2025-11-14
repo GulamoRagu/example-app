@@ -1,5 +1,5 @@
 <h1>Lista de Carros</h1>
-<a href="{{ route('carros.create') }}">Novo Carro</a>
+<a href="{{ route('carros.create') }}">Adicionar Novo Carro</a>
 <ul>
 @foreach($carros as $carro)
     <li>{{ $carro->marca }} {{ $carro->modelo }} ({{ $carro->ano }}) - R$ {{ $carro->preco }}
